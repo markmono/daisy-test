@@ -1,5 +1,43 @@
-<HTML>
-<body>
-Hello
-</body>
-</HTML>
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        .name {
+          padding: 30px;
+          width: max-content;
+          font-family: 'Oleo Script Swash Caps', cursive; 
+          font-size: 70px;
+          animation-name: rock;
+          animation-duration: 1500ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; 
+        }
+
+
+        @keyframes rock {
+          0% {
+            transform:rotate(-45deg);
+          }
+          50% {
+            transform:rotate(45deg);
+          }
+          100% {
+            transform:rotate(-45deg);
+          }
+
+        } 
+      </style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+      <div style="background: #c8f7f5; width: 80%; min-height: 800px; margin-left: auto; margin-right: auto; border: 30px solid #c8f7f5; border-image: url('cupcake.png') 30 round;">
+        <div class="name">Daisy</div>
+      </div>
+      <script>
+        let name = document.querySelector(".name");
+
+      </script>
+    </body>
+</html>
